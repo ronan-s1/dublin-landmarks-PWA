@@ -34,3 +34,9 @@ docker exec geojango_tutorial bash -c "conda run -n geojango_tutorial python man
 ```bash
 docker exec geojango_tutorial bash -c "conda run -n geojango_tutorial python manage.py import_landmarks"
 ```
+
+## Note the configuration script in `settings.py`
+
+set `LOCAL_DOCKER_TEST = True` if running the docker containers locally
+
+[script here](https://github.com/ronan-s1/geojango_tutorial/blob/main/geojango_tutorial/settings.py#L100C1-L129C1)
