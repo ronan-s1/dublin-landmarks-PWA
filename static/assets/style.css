@@ -1,0 +1,92 @@
+.navbar {
+        width: 100% !important;
+        background: #b4dfd644;
+        padding: 10px;
+        border-radius: 0 0 17px 17px
+}
+
+
+main {
+    width: 100%;
+}
+
+
+.card-header {
+        font-size: large;
+}
+
+label[for="id_username"], label[for="id_password"] {
+    display: none;
+}
+
+.login-body {
+    background-size: 80%;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/920/438/original/abstract-city-map-seamless-pattern-roads-navigation-gps-use-for-pattern-fills-surface-textures-web-page-background-wallpaper-illustration-free-vector.jpg");
+}
+
+#id_password, #id_username {
+    background-color: #b4dfd644;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.updatedb {
+    margin-bottom: 20px !important;
+    float: left !important;
+}
+
+.custom-icon {
+    font-size: 20px;
+    color: #7e0cdc;
+}
+
+
+.data-vis{
+    margin-top: 50px;
+}
+
+#yourmap {
+    height: 62vh;
+}
+
+.btn {
+    margin: auto;
+    text-align: center;
+}
+
+.toast {
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar {
+    width: 100% !important;
+    background: #b4dfd644;
+    padding: 10px;
+    border-radius: 0 0 17px 17px
+}
+
+.lon-span {
+    margin-right: 10px;
+}
+
+main {
+    width: 100%;
+}
+
+#favoriteLocation {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#lastUpdated {
+    font-size: 1em;
+    color: #6C757D; /* Gray color */
+}

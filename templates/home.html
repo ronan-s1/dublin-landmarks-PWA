@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand">Dublin Landmarks📍</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'map' %}">Landmarks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="text-center mt-5">
+            <h3>Hi {{ user.username }}...go view some landmarks in Dublin!</h3>
+        </div>
+    </div>
+</body>
+{% else %}
+<div class="container mt-5">
+    <div class="alert alert-warning" role="alert">
+        You are not logged in
+    </div>
+    <a href="{% url 'login' %}" class="btn btn-success">Log In</a>
+</div>
+
+{% endif %}
+
+<style>
+
+</style>
+{% endblock %}
