@@ -12,8 +12,13 @@ VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 
 NOTE: for some reason the markers don't show up on the map of the deployed cloud app, but they are there if you run locally. Regardless the app functions fine anyways.
 
-Markers showing locally:
+**Markers showing locally:**
+
 ![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/7c625d6e-4776-4aa5-bd8d-feae5ba7be40)
+
+**Proof of a responsive app:**
+
+![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/f6411fc4-7ea3-4d70-8e89-e36886ae46fd)
 
 
 # setup
