@@ -5,6 +5,10 @@ VIEW: https://awm-ronan.site/
 
 NOTE: for some reason the marker images don't show up, but they are there if you run locally. Regardless the app functions fine anyways.
 
+Markers showing locally:
+![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/7c625d6e-4776-4aa5-bd8d-feae5ba7be40)
+
+
 ## create docker container for gis
 ```bash
 docker create --name lab4_post_gis --network geojango_tutorial_network --network-alias lab4_post_gis -e POSTGRES_USER=docker -e POSTGRES_PASS=docker -t -p 25432:5432 -v name_of_volume:/var/lib/postgresql kartoza/postgis
