@@ -1,7 +1,7 @@
 # geodjango-landmark-app
 advanced web mapping first assignment
 
-VIEW: https://awm-ronan.site/
+VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 
 NOTE: for some reason the marker images don't show up, but they are there if you run locally. Regardless the app functions fine anyways.
 
