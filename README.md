@@ -1,7 +1,7 @@
 # geodjango-landmark-app
 
 - This django application displays the users location and landmarks in dublin on a map using leaflet and openstreetmap. Users can choose their favourite landmark!
-- It creates, store and manipulate spatial data in PostgreSQL database PostGIS.
+- It creates, store and manipulate spatial data in PostgreSQL/PostGIS database.
 - It uses Boostrap for it's grid layout and visually appealing components. This makes the application responsive to make usuable it on different screen sizes.
 - The app was deployed on an ubuntu VM on Azure using docker, nginx and has HTTPS with the help of certbot.
 
