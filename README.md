@@ -17,6 +17,7 @@ Markers showing locally:
 
 
 # setup
+
 ## create docker container for gis
 ```bash
 docker create --name lab4_post_gis --network geojango_tutorial_network --network-alias lab4_post_gis -e POSTGRES_USER=docker -e POSTGRES_PASS=docker -t -p 25432:5432 -v name_of_volume:/var/lib/postgresql kartoza/postgis
