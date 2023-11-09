@@ -2,6 +2,7 @@
 advanced web mapping first assignment
 
 VIEW: https://awm-ronan.site/
+
 NOTE: for some reason the marker images don't show up, but they are there if you run locally. Regardless the app functions fine anyways.
 
 ## create docker container for gis
