@@ -3,7 +3,7 @@ advanced web mapping first assignment
 
 VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 
-NOTE: for some reason the marker images don't show up, but they are there if you run locally. Regardless the app functions fine anyways.
+NOTE: for some reason the markers don't show up on the map of the deployed cloud app, but they are there if you run locally. Regardless the app functions fine anyways.
 
 Markers showing locally:
 ![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/7c625d6e-4776-4aa5-bd8d-feae5ba7be40)
