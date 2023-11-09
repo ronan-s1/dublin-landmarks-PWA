@@ -1,5 +1,5 @@
 # geodjango-landmark-app
-advanced web mapping first assignment
+[VIDEO DEMO](https://tudublin-my.sharepoint.com/:v:/g/personal/c20391216_mytudublin_ie/Ef1k1o9EXYpMu0z3iQOhJlUBXnkwfNnOBAUU1ZZglN5azQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=2pSMQx)
 
 VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 
