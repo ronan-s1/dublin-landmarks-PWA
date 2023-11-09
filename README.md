@@ -1,6 +1,9 @@
 # geodjango-landmark-app
 advanced web mapping first assignment
 
+VIEW: https://awm-ronan.site/
+NOTE: for some reason the marker images don't show up, but they are there if you run locally. Regardless the app functions fine anyways.
+
 ## create docker container for gis
 ```bash
 docker create --name lab4_post_gis --network geojango_tutorial_network --network-alias lab4_post_gis -e POSTGRES_USER=docker -e POSTGRES_PASS=docker -t -p 25432:5432 -v name_of_volume:/var/lib/postgresql kartoza/postgis
