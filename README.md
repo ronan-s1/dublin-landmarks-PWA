@@ -1,4 +1,11 @@
 # geodjango-landmark-app
+
+- This django application displays the users location and landmarks in dublin on a map using leaflet and openstreetmap. Users can choose their favourite landmark!
+- It creates, store and manipulate spatial data in PostgreSQL database PostGIS.
+- It uses Boostrap for it's grid layout and visually appealing components. This makes the application responsive to make usuable it on different screen sizes.
+- The app was deployed on an ubuntu VM on Azure using docker, nginx and has HTTPS with the help of certbot.
+
+## View for grading
 [VIDEO DEMO](https://tudublin-my.sharepoint.com/:v:/g/personal/c20391216_mytudublin_ie/Ef1k1o9EXYpMu0z3iQOhJlUBXnkwfNnOBAUU1ZZglN5azQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=2pSMQx)
 
 VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
@@ -9,6 +16,7 @@ Markers showing locally:
 ![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/7c625d6e-4776-4aa5-bd8d-feae5ba7be40)
 
 
+# setup
 ## create docker container for gis
 ```bash
 docker create --name lab4_post_gis --network geojango_tutorial_network --network-alias lab4_post_gis -e POSTGRES_USER=docker -e POSTGRES_PASS=docker -t -p 25432:5432 -v name_of_volume:/var/lib/postgresql kartoza/postgis
