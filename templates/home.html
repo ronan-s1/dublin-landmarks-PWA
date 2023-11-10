@@ -29,7 +29,7 @@
 
     <div class="container">
         <div class="text-center mt-5">
-            <h3>Hi {{ user.username }}...go view some landmarks in Dublin!</h3>
+            <h3>Hi {{ user.username }}...go view some <a href="{% url 'map' %}" style="text-decoration: none;">Landmarks</a> in Dublin!</h3>
         </div>
     </div>
 </body>

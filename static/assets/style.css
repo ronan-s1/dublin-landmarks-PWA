@@ -1,10 +1,9 @@
 .navbar {
         width: 100% !important;
-        background: #b4dfd644;
+        background: #b4dfd660;
         padding: 10px;
         border-radius: 0 0 17px 17px
 }
-
 
 main {
     width: 100%;
@@ -40,16 +39,15 @@ label[for="id_username"], label[for="id_password"] {
 
 .custom-icon {
     font-size: 20px;
-    color: #7e0cdc;
+    color: #4b059c;
 }
-
 
 .data-vis{
     margin-top: 50px;
 }
 
 #yourmap {
-    height: 62vh;
+    height: 58vh;
 }
 
 .btn {

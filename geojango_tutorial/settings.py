@@ -99,7 +99,7 @@ DATABASES = {
 
 import socket
 
-LOCAL_DOCKER_TEST = True
+LOCAL_DOCKER_TEST = False
 DEPLOY_SECURE = False
 
 if LOCAL_DOCKER_TEST:
@@ -109,7 +109,7 @@ elif socket.gethostname() == "DESKTOP-J8PFDKQ":
     DATABASES["default"]["HOST"] = "localhost"
     DATABASES["default"]["PORT"] = 25432
 else:
-    DATABASES["default"]["HOST"] = "wmap_postgis"
+    DATABASES["default"]["HOST"] = "wmap-postgis"
     DATABASES["default"]["PORT"] = 5432
     DEPLOY_SECURE = True
 
