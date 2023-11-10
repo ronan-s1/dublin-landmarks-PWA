@@ -7,18 +7,18 @@ VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 - It uses Boostrap for it's grid layout and visually appealing components. This makes the application responsive to make usuable it on different screen sizes.
 - The app was deployed on an ubuntu VM on Azure using docker, nginx and has HTTPS with the help of certbot.
 
-## View for grading
+# View for grading
 [~~VIDEO DEMO SHARED POINT~~](https://tudublin-my.sharepoint.com/:v:/g/personal/c20391216_mytudublin_ie/EcZOnU5-60xPvpsHTTyirbYBZI1sV_lJeLe2PeN4hOe3NQ)
 
 The SharePoint video is at like 3fps so I uploaded another one to youtube:
 **https://youtu.be/5YyVTnQEQRE**
 
-**Screenshot of app**
+## Screenshot of app
 
 ![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/3540fe56-4e31-4e3a-b926-fcd92c61796a)
 
 
-**Proof of a responsive app:**
+## Proof of a responsive app:**
 
 ![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/2853f71d-97c5-416a-9b2e-6af7029d6020)
 
