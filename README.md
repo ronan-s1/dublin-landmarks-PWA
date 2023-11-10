@@ -6,20 +6,18 @@
 - The app was deployed on an ubuntu VM on Azure using docker, nginx and has HTTPS with the help of certbot. **(The deployed app is now taken down due to my credits running low, however you can still see a video of the deployed app)**
 
 ## View for grading
-[VIDEO DEMO](https://tudublin-my.sharepoint.com/:v:/g/personal/c20391216_mytudublin_ie/Ef1k1o9EXYpMu0z3iQOhJlUBXnkwfNnOBAUU1ZZglN5azQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=2pSMQx)
+[VIDEO DEMO](https://tudublin-my.sharepoint.com/:v:/g/personal/c20391216_mytudublin_ie/EcZOnU5-60xPvpsHTTyirbYBZI1sV_lJeLe2PeN4hOe3NQ)
 
 VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 
-NOTE: for some reason the markers don't show up on the map of the deployed cloud app, but they are there if you run locally. Regardless the app functions fine anyways.
+**Screenshot of app**
 
-**Markers showing locally:**
+![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/3540fe56-4e31-4e3a-b926-fcd92c61796a)
 
-![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/7c625d6e-4776-4aa5-bd8d-feae5ba7be40)
 
 **Proof of a responsive app:**
 
-![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/f6411fc4-7ea3-4d70-8e89-e36886ae46fd)
-
+![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/2853f71d-97c5-416a-9b2e-6af7029d6020)
 
 # setup
 
