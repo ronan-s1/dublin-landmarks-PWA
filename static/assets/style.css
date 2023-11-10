@@ -1,6 +1,6 @@
 .navbar {
         width: 100% !important;
-        background: #b4dfd660;
+        background: #b4dfd660 !important;
         padding: 10px;
         border-radius: 0 0 17px 17px
 }
@@ -8,7 +8,6 @@
 main {
     width: 100%;
 }
-
 
 .card-header {
         font-size: large;
