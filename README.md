@@ -48,9 +48,6 @@ docker start lab4_post_gis
 
 ## Load landmark and migrations
 ```bash
-docker exec geojango_tutorial bash -c "conda run -n geojango_tutorial python manage.py makemigrations"
-```
-```bash
 docker exec geojango_tutorial bash -c "conda run -n geojango_tutorial python manage.py migrate"
 ```
 ```bash
