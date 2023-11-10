@@ -17,7 +17,7 @@ Demo Video:
 ![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/3540fe56-4e31-4e3a-b926-fcd92c61796a)
 
 
-## Proof of a responsive app:**
+## Proof of a responsive app:
 
 ![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/2853f71d-97c5-416a-9b2e-6af7029d6020)
 
