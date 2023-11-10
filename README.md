@@ -8,9 +8,8 @@ VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 - The app was deployed on an ubuntu VM on Azure using docker, nginx and has HTTPS with the help of certbot.
 
 # View for grading
-[~~VIDEO DEMO SHARED POINT~~](https://tudublin-my.sharepoint.com/:v:/g/personal/c20391216_mytudublin_ie/EcZOnU5-60xPvpsHTTyirbYBZI1sV_lJeLe2PeN4hOe3NQ)
 
-The SharePoint video is at like 3fps so I uploaded another one to youtube:
+Demo Video:
 **https://youtu.be/5YyVTnQEQRE**
 
 ## Screenshot of app
