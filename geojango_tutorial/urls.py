@@ -22,8 +22,9 @@ from userlocation.views import update_location, map_view
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="home.html"), name="home"),
+    path("", include("pwa.urls")),
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
-    path("map/", map_view, name="map"),
+    path("map", map_view, name="map"),
     path("updatedb/", update_location, name="update_location"),
 ]
