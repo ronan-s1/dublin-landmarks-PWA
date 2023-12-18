@@ -35,6 +35,7 @@ class Landmark(models.Model):
     longitude = models.FloatField()
     description = models.TextField(blank=True, null=True)
     location = gis_models.PointField(null=True)
+    category = models.CharField(max_length=255, null=True)
 
     def __str__(self):
         return f"Landmark {self.description} ({self.latitude}, {self.longitude})"

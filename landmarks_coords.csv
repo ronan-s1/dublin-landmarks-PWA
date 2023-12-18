@@ -1,21 +1,26 @@
-description,lat,lon
-The Spire,53.349798,-6.260252
-Guinness Storehouse,53.341933,-6.28673
-Dublin Castle,53.342597,-6.267051
-St Stephens Green,53.337991,-6.259072
-Trinity College,53.343792,-6.254572
-OConnell Bridge,53.347262,-6.259117
-Hapenny Bridge,53.346311,-6.263114
-Phoenix Park,53.358850,-6.330696
-Red Sticks,53.343691,-6.238245
-National Museum of Ireland,53.348879,-6.285784
-Malahide Beach,53.448661,-6.135779
-Portmarnock Beach,53.415808,-6.119246
-Malahide Castle,53.444937,-6.164611
-IKEA,53.407314,-6.276391
-Jameson Chimney,53.348486,-6.277850
-Aviva Stadium,53.335233,-6.228178
-Howth Cliff Walk,53.385688,-6.05138
-Croke Park,53.360358,-6.250981
-Dublinia,53.343238,-6.272016
-The Temple Bar,53.345454,-6.264117
+description,lat,lon,category
+The Spire,53.349798,-6.260252,monument
+Guinness Storehouse,53.341933,-6.28673,museum
+Dublin Castle,53.342597,-6.267051,landmark
+St Stephens Green,53.337991,-6.259072,nature
+Trinity College,53.343792,-6.254572,landmark
+OConnell Bridge,53.347262,-6.259117,landmark
+Hapenny Bridge,53.346311,-6.263114,landmark
+Phoenix Park,53.358850,-6.330696,nature
+Red Sticks,53.343691,-6.238245,monument
+National Museum of Ireland,53.348879,-6.285784,museum
+Malahide Beach,53.448661,-6.135779,nature
+Portmarnock Beach,53.415808,-6.119246,nature
+Malahide Castle,53.444937,-6.164611,landmark
+IKEA,53.407314,-6.276391,landmark
+Jameson Chimney,53.348486,-6.277850,monument
+Aviva Stadium,53.335233,-6.228178,landmark
+Howth Cliff Walk,53.385688,-6.05138,nature
+Croke Park,53.360358,-6.250981,nature
+Dublinia,53.343238,-6.272016,landmark
+The Temple Bar,53.345454,-6.264117,landmark
+Iveagh Gardens,53.335028,-6.261017,nature
+Herbert Park,53.327687,-6.23657,nature
+Wellington Monument,53.349040,-6.303124,monument
+Chester Beatty,53.342146,-6.267429,museum
+The Little Museum of Dublin,53.339503,-6.258426,museum

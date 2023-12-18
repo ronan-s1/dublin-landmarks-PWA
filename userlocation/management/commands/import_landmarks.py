@@ -19,12 +19,14 @@ class Command(BaseCommand):
                 longitude = float(row["lon"])
                 description = row["description"]
                 map_point = Point((longitude, latitude), srid=4326)
+                category = row["category"]
 
                 landmark = Landmark(
                     latitude=latitude,
                     longitude=longitude,
                     description=description,
-                    location = map_point
+                    location=map_point,
+                    category=category
                 )
                 landmark.save()
 

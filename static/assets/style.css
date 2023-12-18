@@ -37,12 +37,30 @@ label[for="id_username"], label[for="id_password"] {
 }
 
 .custom-icon {
-    font-size: 20px;
-    color: #4b059c;
+    font-size: 24px;
+    color: #020000;
 }
+
+
 
 .data-vis{
     margin-top: 50px;
+}
+
+#categoryTable table{
+    background-color: #b4dfd644 !important;
+}
+
+#categoryTable thead {
+     background-color: #b4dfd670 !important;
+}
+
+.close {
+    text-decoration: none;
+}
+
+.updatedb {
+    margin-right: 10px !important;
 }
 
 #yourmap {
@@ -50,7 +68,6 @@ label[for="id_username"], label[for="id_password"] {
 }
 
 .btn {
-    margin: auto;
     text-align: center;
 }
 
@@ -61,6 +78,14 @@ label[for="id_username"], label[for="id_password"] {
 h1{
     text-align: center;
     margin-top: 20px;
+}
+
+.close {
+    background: #b4dfd650;
+}
+
+.close:hover {
+    background: #b4dfd680;
 }
 
 .navbar {
