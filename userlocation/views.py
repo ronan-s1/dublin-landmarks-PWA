@@ -32,7 +32,7 @@ def update_location(request):
         user_profile.lon = lon
         user_profile.lat = lat
         user_profile.location = map_point
-        user_profile.description = f"Your current favourite location is {description}"
+        user_profile.description = f"Your current favourite landmark is {description}"
         user_profile.save()
         return JsonResponse({"message": f"Set location to lon: {lon}, lat: {lat}."}, status=200)
     except Exception as e:
