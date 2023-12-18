@@ -128,6 +128,19 @@
 
                     var landmarkMarker = L.marker([landmark_latitude, landmark_longitude], { icon: landmark_icon }).addTo(map);
                     landmarkMarker.bindPopup(landmark_description);
+
+                    landmarkMarker.on('click', function (e) {
+                        var selectedLandmark = this.getPopup().getContent();
+                        setTimeout(function() {
+                            $("#locationSelect option").each(function() {
+                                if ($(this).text() == selectedLandmark) {
+                                    $(this).attr('selected', 'selected');
+                                }
+                            });
+                        }, 0);
+                    });
+
+
                 {% endfor %}
 
                 // display the closest landmark

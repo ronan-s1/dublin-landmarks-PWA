@@ -1,22 +1,45 @@
-// Cache CSS and javaScript assets with a stale-while-revalidate strategy.
-routing.registerRoute(
-    ({request}) => request.destination === 'script' ||
-        request.destination === 'style',
-    new strategies.StaleWhileRevalidate({
-        cacheName: 'static-resources',
-    })
-);
- 
-// Cache image files with a cache-first strategy for 30 days.
-routing.registerRoute(
-    ({request}) => request.destination === 'image',
-    new strategies.CacheFirst({
-        cacheName: 'images',
-        plugins: [
-            new expiration.ExpirationPlugin({
-                maxEntries: 60,
-                maxAgeSeconds: 30 * 24 * 60 * 60,
-            }),
-        ],
-    })
-);
+// Base Service Worker implementation.  To use your own Service Worker, set the PWA_SERVICE_WORKER_PATH variable in settings.py
+
+var staticCacheName = "django-pwa-v" + new Date().getTime();
+var filesToCache = [
+    '/offline/',
+    '/static/images/icon.png'
+];
+
+// Cache on install
+self.addEventListener("install", event => {
+    this.skipWaiting();
+    event.waitUntil(
+        caches.open(staticCacheName)
+            .then(cache => {
+                return cache.addAll(filesToCache);
+            })
+    )
+});
+
+// Clear cache on activate
+self.addEventListener('activate', event => {
+    event.waitUntil(
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames
+                    .filter(cacheName => (cacheName.startsWith("django-pwa-")))
+                    .filter(cacheName => (cacheName !== staticCacheName))
+                    .map(cacheName => caches.delete(cacheName))
+            );
+        })
+    );
+});
+
+// Serve from Cache
+self.addEventListener("fetch", event => {
+    event.respondWith(
+        caches.match(event.request)
+            .then(response => {
+                return response || fetch(event.request);
+            })
+            .catch(() => {
+                return caches.match('/offline/');
+            })
+    )
+});
