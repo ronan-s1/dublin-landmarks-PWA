@@ -33,10 +33,25 @@ def update_location(request):
     except Exception as e:
         return JsonResponse({"message": str(e)}, status=400)
 
+
 @login_required
 def map_view(request):
     # lazy import to avoid circular import
     user_profile = Profile.objects.get(user=request.user)
     landmark_model = apps.get_model("userlocation", "Landmark")
     landmarks = landmark_model.objects.all()
-    return render(request, "map.html", {"landmarks": landmarks, "favorite_location": user_profile.description, "last_updated": user_profile.last_updated})
+    return render(request, "map.html", {
+        "landmarks": landmarks,
+        "favorite_location": user_profile.description,
+        "last_updated": user_profile.last_updated
+    })
+
+
+@login_required
+def get_favourite_location(request):
+    # lazy import to avoid circular import
+    user_profile = Profile.objects.get(user=request.user)
+    return JsonResponse({
+        "favourite_location": user_profile.description,
+        "last_updated": user_profile.last_updated
+    })

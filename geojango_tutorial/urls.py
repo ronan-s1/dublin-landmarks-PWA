@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import (TemplateView)
 
-from userlocation.views import update_location, map_view
+from userlocation.views import update_location, map_view, get_favourite_location
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="home.html"), name="home"),
@@ -26,5 +26,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
     path("map", map_view, name="map"),
+    path("get_favourite_location/", get_favourite_location, name="update_location"),
     path("updatedb/", update_location, name="update_location"),
 ]
+

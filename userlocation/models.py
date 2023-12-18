@@ -5,15 +5,6 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 
-class User(models.Model):
-    username = models.CharField(max_length=20)
-    email = models.EmailField(max_length=30)
-    password = models.CharField(max_length=15)
-
-    def __str__(self):
-        return str(self.username)
-
-
 class Profile(models.Model):
     user = models.OneToOneField(
         get_user_model(),

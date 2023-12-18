@@ -43,6 +43,7 @@
                     <p>Favorite since: <span id="lastUpdated">{{ last_updated }}</span></p>
                 </div>
             </div>
+
             <div class="col-md-6">
                 <div class="alert alert-success" id="locationAlert">
                     <h4 class="alert-heading">Your Location</h4>
@@ -154,9 +155,10 @@
     }
 
 
+    var HOST = location.protocol + "//" + location.host;
+
     function update_db() {
         const crsf_token = getCookie('csrftoken');
-        var HOST = location.protocol + "//" + location.host;
         var locationAlert = $("#locationAlert");
 
         var selectedLocation = $("#locationSelect option:selected");
@@ -184,6 +186,9 @@
             // Update the alert content
             $("#longitude").text(data["lon"]);
             $("#latitude").text(data["lat"]);
+
+            // Call the updateFavoriteLocationAndLastUpdated function after the AJAX request is successful
+            update_fav_location_last_updated();
         }).fail(function (xhr, status, error) {
             console.log(error);
             locationAlert.removeClass("alert-success").addClass("alert-danger").text("Failed to update location: " + error);
@@ -191,6 +196,25 @@
             locationAlert.show();
         });
     }
+
+    // Move this function outside of update_db
+    function update_fav_location_last_updated() {
+        $.ajax({
+            type: "GET",
+            url: HOST + "/get_favourite_location/",
+        }).done(function (data) {
+            console.log(data)
+            // Update the favorite location and last updated elements
+            $("#favoriteLocation").html(data.favourite_location + " 🤯");
+            // Format the last_updated using a library like moment.js
+            var formattedDate = moment(data.last_updated).format('MMM. D, YYYY, h:mm a');
+            $("#lastUpdated").text("Favorite since: " + formattedDate);
+        }).fail(function (xhr, status, error) {
+            console.log(error);
+        });
+    }
+
+
 
     </script>
 
