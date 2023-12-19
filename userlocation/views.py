@@ -1,13 +1,13 @@
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.views import LoginView
 from django.contrib.gis.geos import Point
-from django.urls import reverse
 from . import models
 from django.shortcuts import render
 from django.apps import apps
 from .models import Profile, Landmark
-
+from bs4 import BeautifulSoup
+import requests
+from datetime import datetime
 
 @login_required
 def update_location(request):
@@ -37,6 +37,35 @@ def update_location(request):
         return JsonResponse({"message": f"Set location to lon: {lon}, lat: {lat}."}, status=200)
     except Exception as e:
         return JsonResponse({"message": str(e)}, status=400)
+
+
+@login_required
+def get_weather(request):
+    url = "https://www.met.ie/forecasts/dublin"
+    response = requests.get(url)
+
+    # Default
+    today_date = "No forecast today."
+    today_forecast_text = "-"
+
+    if response.status_code == 200:
+        # Parse html and find all h2 tags on the page
+        soup = BeautifulSoup(response.text, "html.parser")
+        all_h2_tags = soup.find_all("h2")
+
+        # Find the h2 tag that contains "TODAY"
+        today_h2 = next((h2 for h2 in all_h2_tags if "TODAY" in h2.text), None)
+
+        if today_h2:
+            today_date = today_h2.get_text(strip=True).split(" - ")[1]
+            today_forecast_text = today_h2.find_next("p").get_text(strip=True)
+    else:
+        print(f"Failed to retrieve the page. Status code: {response.status_code}")
+
+    return JsonResponse({
+        "weather_date": today_date,
+        "weather_forecast": today_forecast_text,
+    })
 
 
 @login_required

@@ -45,6 +45,11 @@
                         <p><span id="favoriteLocation">{{ favorite_location }} 🤯</span></p>
                         <p>Favourite since: <span id="lastUpdated">{{ last_updated }}</span></p>
                     </div>
+
+                    <div class="alert alert-info mb-3" style="display: none;" id="weather-alert">
+                        <h4 id="weather-date"></h4>
+                        <p id="weather-forecast"></p>
+                    </div>
                 </div>
 
 
@@ -253,6 +258,7 @@
                                     }
                                 }
                             });
+                            get_weather();
                         });
 
                         // display the closest landmark
@@ -339,7 +345,22 @@
                 });
             }
 
+            // getting weather
+            function get_weather() {
+                $.ajax({
+                    type: "GET",
+                    url: HOST + "/get_weather/",
+                }).done(function (data) {
+                    // Update the weather date and forecast elements
+                    $("#weather-date").text("Dublin Weather - " + data.weather_date);
+                    $("#weather-forecast").text(data.weather_forecast);
+                    $("#weather-alert").show();
+                }).fail(function (xhr, status, error) {
+                    console.log(error);
+                });
+            }
 
+            // adding a landmark
             function addLandmark() {
                 const crsf_token = getCookie('csrftoken');
                 var longitude = $("#add_longitude").val();
