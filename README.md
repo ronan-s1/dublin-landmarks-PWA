@@ -5,6 +5,7 @@ VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 - This Django PWA displays the user's location along with landmarks in Dublin on a map using leaflet and openstreetmap.
 - The application was deployed on Azure using Docker containers, Nginx and TSL was achieved using Certbot.
 - Boostrap was employed to make the UI applealing and responsive.
+- The Beautiful Soup package was utilised to scrape the weather data and parse the HTML.
 - The application is confirmed as a Progressive Web App (PWA) through Google Lighthouse validation.
 
 ## Features
@@ -14,6 +15,7 @@ VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 - Easily add a new landmark to the map.
 - Colour-coded markers distinguish landmarks based on different categories.
 - Find the nearest landmark to your current location.
+- See the current weather in Dublin.
 - Enjoy an intuitive and visually appealing user interface for a seamless experience.
 
 ## Screenshot of app
@@ -21,6 +23,10 @@ VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 ![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/fa5fb0e3-78d9-4e06-bc8a-4b77b2acc1c2)
 
 ![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/71f62e05-f339-4769-b3b9-c36219d6d943)
+
+![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/4d9cb174-fa6a-43b1-94d5-a3ad07ed5677)
+
+![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/403bb1fb-d0fa-4517-b330-39244a782387)
 
 
 # Setup
