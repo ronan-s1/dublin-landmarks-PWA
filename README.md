@@ -3,7 +3,7 @@
 VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 
 - This Django PWA displays the user's location along with landmarks in Dublin on a map using leaflet and openstreetmap.
-- The application was deployed on Azure using Docker containers, Nginx and TSL wash achieved using Certbot.
+- The application was deployed on Azure using Docker containers, Nginx and TSL was achieved using Certbot.
 - Boostrap was employed to make the UI applealing and responsive.
 - The application is confirmed as a Progressive Web App (PWA) through Google Lighthouse validation.
 
