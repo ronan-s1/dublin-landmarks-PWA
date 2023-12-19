@@ -1,34 +1,36 @@
-# geodjango-landmark-app
+# Dublin Landmarks Django PWA
 
 VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 
-- This django application displays the users location and landmarks in dublin on a map using leaflet and openstreetmap. Users can choose their favourite landmark and see which landmark is nearest to them.
-- It creates, store and manipulate spatial data in PostgreSQL/PostGIS database.
-- It uses Boostrap for it's grid layout and visually appealing components. This makes the application responsive to make usuable it on different screen sizes.
-- The app was deployed on an ubuntu VM on Azure using docker, nginx and has HTTPS with the help of certbot.
+- This Django PWA displays the user's location along with landmarks in Dublin on a map using leaflet and openstreetmap.
+- The application was deployed on Azure using Docker containers, Nginx and TSL wash achieved using Certbot.
+- Boostrap was employed to make the UI applealing and responsive.
+- The application is confirmed as a Progressive Web App (PWA) through Google Lighthouse validation.
 
-# View for grading
-
-Demo Video:
-**https://youtu.be/5YyVTnQEQRE**
+## Features
+- Choose a landmark from the dropdown to set it as your favorite.
+  - The map automatically zooms in to the selected landmark.
+- Click on a landmark marker on the map to update the dropdown selection.
+- Easily add a new landmark to the map.
+- Colour-coded markers distinguish landmarks based on different categories.
+- Find the nearest landmark to your current location.
+- Enjoy an intuitive and visually appealing user interface for a seamless experience.
 
 ## Screenshot of app
 
-![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/3540fe56-4e31-4e3a-b926-fcd92c61796a)
+![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/fa5fb0e3-78d9-4e06-bc8a-4b77b2acc1c2)
+
+![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/71f62e05-f339-4769-b3b9-c36219d6d943)
 
 
-## Proof of a responsive app:
+# Setup
 
-![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/2853f71d-97c5-416a-9b2e-6af7029d6020)
-
-# setup
-
-## create docker container for gis
+## Create GIS container
 ```bash
 docker create --name lab4_post_gis --network geojango_tutorial_network --network-alias lab4_post_gis -e POSTGRES_USER=docker -e POSTGRES_PASS=docker -t -p 25432:5432 -v name_of_volume:/var/lib/postgresql kartoza/postgis
 ```
 
-## create docker container for django app
+## Create app container
 ```bash
 docker build -t geojango_tutorial .
 ```
@@ -37,7 +39,7 @@ docker build -t geojango_tutorial .
 docker create --name geojango_tutorial --network geojango_tutorial_network --network-alias geojango_tutorial -t -p 8001:8001 geojango_tutorial
 ```
 
-## start containers
+## Start containers
 ```bash
 docker start geojango_tutorial
 ```
@@ -46,7 +48,7 @@ docker start geojango_tutorial
 docker start lab4_post_gis
 ```
 
-## Load landmark and migrations
+## Load landmarks and migrate model
 ```bash
 docker exec geojango_tutorial bash -c "conda run -n geojango_tutorial python manage.py migrate"
 ```
