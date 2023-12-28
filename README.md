@@ -1,6 +1,10 @@
 # Dublin Landmarks Django PWA
 
+**[DEMO VIDEO](https://youtu.be/k-tA-KK7D_s?si=NUtwOd7V0VbZkv74)**
+
 VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
+
+<hr>
 
 - This Django PWA displays the user's location along with landmarks in Dublin on a map using leaflet and openstreetmap.
 - The application was deployed on Azure using Docker containers, Nginx and TSL was achieved using Certbot.
