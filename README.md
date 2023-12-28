@@ -27,7 +27,7 @@ VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 
 ## Screenshot of app
 
-![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/fa5fb0e3-78d9-4e06-bc8a-4b77b2acc1c2)
+![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/8eaea295-8727-4da6-a5a2-f36e0c49a6c7)
 
 ![image](https://github.com/ronan-s1/geojango_tutorial/assets/85257187/71f62e05-f339-4769-b3b9-c36219d6d943)
 
