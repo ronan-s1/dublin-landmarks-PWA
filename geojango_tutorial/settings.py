@@ -104,7 +104,7 @@ DATABASES = {
 import socket
 
 LOCAL_DOCKER_TEST = False
-DEPLOY_SECURE = False
+DEPLOY_SECURE = True
 
 if LOCAL_DOCKER_TEST:
     DATABASES["default"]["HOST"] = "lab4_post_gis"
