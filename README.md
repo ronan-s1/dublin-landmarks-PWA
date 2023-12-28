@@ -10,6 +10,7 @@ VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 - The application was deployed on Azure using Docker containers, Nginx and TSL was achieved using Certbot.
 - Boostrap was employed to make the UI applealing and responsive.
 - The Beautiful Soup package was utilised to scrape the weather data and parse the HTML.
+- The different layers on the map was built using CartoDB
 - The application is confirmed as a Progressive Web App (PWA) through Google Lighthouse validation.
 
 ## Features
@@ -18,6 +19,7 @@ VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 - Click on a landmark marker on the map to update the dropdown selection.
 - Easily add a new landmark to the map.
 - Distinguish landmarks on the map based on category colour.
+- Choose the different g
 - Find the nearest landmark to your current location.
 - See the current weather in Dublin.
 - Enjoy an intuitive and visually appealing user interface for a seamless experience.
