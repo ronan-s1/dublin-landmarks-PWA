@@ -19,7 +19,8 @@ VIEW: https://awm-ronan.site/ (username: "ronan", password: "password")
 - Click on a landmark marker on the map to update the dropdown selection.
 - Easily add a new landmark to the map.
 - Distinguish landmarks on the map based on category colour.
-- Choose the different g
+- Search different locations on the map.
+- Choose different map layers to your liking.
 - Find the nearest landmark to your current location.
 - See the current weather in Dublin.
 - Enjoy an intuitive and visually appealing user interface for a seamless experience.
